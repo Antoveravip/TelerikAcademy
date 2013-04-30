@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="description" content="JavaScript Lesson 2, Exercise 4" />
+        <meta name="keywords" content="lesson, exercise, javascript, text area" />
+        <meta name="author" content="crypted" />
+        <meta charset="UTF-8" />
+        <title>Text Area</title>        
+    </head>
+    <body>
+    <script>
+        var docFragment = document.createDocumentFragment();
+
+        var textArea = document.createElement("textarea");
+        textArea.id = "text";
+        textArea.textContent = "Test text area text";
+
+        var inputFieldColorFont = document.createElement("input");
+        inputFieldColorFont.type = "color";
+        inputFieldColorFont.id = "colorFont";
+        inputFieldColorFont.onchange = changeFontColor;
+
+        var inputFieldColorBackground = document.createElement('input');
+        inputFieldColorBackground.type = "color";
+        inputFieldColorBackground.id = "colorBackground";
+        inputFieldColorBackground.onchange = changeBackgroundColor;
+
+        docFragment.appendChild(textArea);
+        docFragment.appendChild(inputFieldColorFont);
+        docFragment.appendChild(inputFieldColorBackground);
+
+        document.body.appendChild(docFragment);
+        
+        function changeFontColor() {
+            'use strict';
+            return textArea.style.color = document.getElementById("colorFont").value;
+        }
+
+        function changeBackgroundColor() {
+            'use strict';
+            textArea.style.backgroundColor = document.getElementById("colorBackground").value;
+        }
+    </script>
+    </body>
+</html>

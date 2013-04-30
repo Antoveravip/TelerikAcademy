@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="description" content="JavaScript Lesson 2, Exercise 5" />
+        <meta name="keywords" content="lesson, exercise, javascript, tag-cloud" />
+        <meta name="author" content="crypted" />
+        <meta charset="UTF-8" />
+        <title>Create tag cloud</title>        
+    </head>
+    <body>
+    <script>
+        function generateTagCloud(tags, minSize, maxSize) {
+            var i = 0, j = 0, k = 0, tagsName = [];
+            var docFragment = document.createDocumentFragment();
+            
+            for (i = 0; i < tags.length; i++) {
+                var data = document.createElement('div');
+                data.textContent = tags[i];
+                data.style.display = "inline";                
+                var isInCloud = false;
+
+                for (var j = 0; j < tagsName.length; j++) {
+                    if (tags[i].toLowerCase() === tagsName[j].toLowerCase()) {
+                        isInCloud = true;
+                        break;
+                    }
+                }
+
+                if (!isInCloud) {
+                    var size = parseInt(minSize) - 1;
+
+                    for (k = 0; k < tags.length; k++) {
+                        if (tags[i].toLowerCase() === tags[k].toLowerCase()) {
+                            size++;
+                        }
+                    }
+                    
+                    if (size > maxSize) {
+                        size = maxSize;
+                    }
+                    data.style.fontSize = size + "px";
+                    data.style.marginRight = (cloudWidth - size) / 16 + "px";
+
+                    tagsName.push(tags[i]);
+                    docFragment.appendChild(data);
+                }
+            }
+            
+            return docFragment;
+        }
+
+        var tags = ["cms", "javascript", "js", "ASP.NET MVC", ".net", ".net", "css", 
+            "wordpress", "xaml", "js", "http", "web", "asp.net", "asp.net MVC", "ASP.NET MVC",
+            "wp", "javascript", "js", "cms", "html", "javascript", "http", "http", "CMS"];
+
+        var cloudWidth = 850, cloudHeigth = 80;
+        var tagCloud = generateTagCloud(tags, 18, 50);
+
+        var cloud = document.createElement("div");
+        
+        cloud.style.width = cloudWidth + "px";
+        cloud.style.height = cloudHeigth + "px";
+        cloud.style.backgroundColor = "grey";
+
+        cloud.appendChild(tagCloud);
+        document.body.appendChild(cloud);
+    </script>
+</body>
+</html>

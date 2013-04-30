@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="description" content="JavaScript Lesson 2, Exercise 2" />
+        <meta name="keywords" content="lesson, exercise, javascript, divs" />
+        <meta name="author" content="crypted" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="circulate-divs.js"></script>
+        <title>Moving Div Elements In Circle</title>        
+    </head>
+    <body>
+	<div id="buttons">
+		<a href="#" id="btn-start" onclick="onStartDivsRotation(event);">Start</a>
+		<a href="#" id="btn-stop" onclick="onStopDivsRotation(event);">Stop</a>
+	</div>
+        <div id="wrapper">
+            
+        </div>
+	<script>
+            var timer, divNumber = 5, radius = 150, angle = 0, changeAngle = 5;
+            var docFragment = document.getElementById("wrapper");
+            var rotatableDivs = document.getElementsByClassName("rotatable-div");
+
+            generateRotatableDivs(divNumber); 
+	</script>
+    </body>
+</html>

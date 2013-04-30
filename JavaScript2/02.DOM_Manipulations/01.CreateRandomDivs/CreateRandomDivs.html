@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="description" content="JavaScript Lesson 2, Exercise 1">
+	<meta name="keywords" content="lesson, exercise, javascript, create randoms divs">
+	<meta name="author" content="crypted">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>DOM Manipulation - Create Random Divs</title>
+</head>
+<body>
+	<p>Enter how many divs you want to create:</p>
+	<input type="text" id="divs-count" />
+	<a href="#" id="generate-divs-btn" onclick="onGenerateRandomDivsButtonClick();">Generate divs</a>
+	<div id="content">
+	</div>
+	<script>
+        var min = 0, max = 0;
+
+		function generateRandomSize(min, max) {
+			'use strict';
+		    var size = Math.floor(Math.random() * (max - min)) + min;
+
+		    return size;
+		}			
+
+		function generateRandomColor() {
+			'use strict';
+			var red, green, blue, color;
+
+            red = (Math.random() * 256) | 0;
+            green = (Math.random() * 256) | 0;
+            blue = (Math.random() * 256) | 0;
+
+			color = "rgb(" + red + "," + green + "," + blue + ")";
+
+            return color;
+        }
+
+		function generateRandomDivStyle(div) {
+			'use strict';
+			var maxWidth, maxHeight, topPos, leftPos;
+
+			maxWidth = screen.width - 100;
+			maxHeight = screen.height - 300;
+			topPos = Math.floor(Math.random() * (maxHeight - 40));
+			leftPos = Math.floor(Math.random() * (maxWidth - 40));
+
+			div.style.color = generateRandomColor();
+			div.style.width = generateRandomSize(20, 100) + "px";
+			div.style.height = generateRandomSize(20, 100) + "px";
+			div.style.backgroundColor = generateRandomColor();
+			div.style.position = "absolute";
+			div.style.top = topPos + "px";
+			div.style.left = leftPos + "px";
+			div.style.border = generateRandomSize(1, 20) + "px solid";
+			div.style.borderRadius = generateRandomSize(1, 20) + "px";
+			div.style.MozBorderRadius = generateRandomSize(1, 20) + "px";
+			div.style.borderColor = generateRandomColor();
+		}
+
+		function onGenerateRandomDivsButtonClick() {
+			'use strict';
+			var startTime, contentDiv, count, docFragment, i, div, strong;
+
+			startTime = new Date();
+
+			contentDiv = document.getElementById("content");
+
+			while (contentDiv.firstChild) {
+				contentDiv.removeChild(contentDiv.firstChild);
+			}
+
+			count = (document.getElementById("divs-count").value | 0) || 7;
+
+			docFragment = document.createDocumentFragment();
+
+			for (i = 0; i < count; i++) {
+				div = document.createElement("div");
+				strong = document.createElement("strong");
+				strong.innerHTML = "div";
+				div.className = "colored";
+				generateRandomDivStyle(div);
+				div.appendChild(strong);
+				docFragment.appendChild(div);
+			}
+
+			contentDiv.appendChild(docFragment);
+			console.log(new Date() - startTime);
+
+			return false;
+		}
+	</script>
+</body>
+</html>
