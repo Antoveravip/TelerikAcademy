@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.CSharpCleanCode", "01.CSharpCleanCode\01.CSharpCleanCode.csproj", "{446DA2EC-D18D-4894-89E3-744158545350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Sudoku", "02.Sudoku\02.Sudoku.csproj", "{3244E6EB-D887-4462-8AB0-92B199032F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Employees", "03.Employees\03.Employees.csproj", "{77C0B319-A47C-4015-B0D8-84A3BB31C011}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{446DA2EC-D18D-4894-89E3-744158545350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446DA2EC-D18D-4894-89E3-744158545350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446DA2EC-D18D-4894-89E3-744158545350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446DA2EC-D18D-4894-89E3-744158545350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3244E6EB-D887-4462-8AB0-92B199032F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3244E6EB-D887-4462-8AB0-92B199032F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3244E6EB-D887-4462-8AB0-92B199032F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3244E6EB-D887-4462-8AB0-92B199032F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C0B319-A47C-4015-B0D8-84A3BB31C011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C0B319-A47C-4015-B0D8-84A3BB31C011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C0B319-A47C-4015-B0D8-84A3BB31C011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C0B319-A47C-4015-B0D8-84A3BB31C011}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

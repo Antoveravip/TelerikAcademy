@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustCoyote", "JustCoyote\JustCoyote\JustCoyote.csproj", "{7AC3B146-E290-4078-A22C-D7D17EC460AC}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "JustCoyoteContent", "JustCoyote\JustCoyoteContent\JustCoyoteContent.contentproj", "{CB9EA175-DFA3-4E94-B557-8256E34A531B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://coyoteteam.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = JustCoyote\\JustCoyote\\JustCoyote.csproj
+		SccProjectName1 = JustCoyote/JustCoyote
+		SccLocalPath1 = JustCoyote\\JustCoyote
+		SccProjectUniqueName2 = JustCoyote\\JustCoyoteContent\\JustCoyoteContent.contentproj
+		SccProjectName2 = JustCoyote/JustCoyoteContent
+		SccLocalPath2 = JustCoyote\\JustCoyoteContent
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AC3B146-E290-4078-A22C-D7D17EC460AC}.Debug|x86.ActiveCfg = Debug|x86
+		{7AC3B146-E290-4078-A22C-D7D17EC460AC}.Debug|x86.Build.0 = Debug|x86
+		{7AC3B146-E290-4078-A22C-D7D17EC460AC}.Release|x86.ActiveCfg = Release|x86
+		{7AC3B146-E290-4078-A22C-D7D17EC460AC}.Release|x86.Build.0 = Release|x86
+		{CB9EA175-DFA3-4E94-B557-8256E34A531B}.Debug|x86.ActiveCfg = Debug|x86
+		{CB9EA175-DFA3-4E94-B557-8256E34A531B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
