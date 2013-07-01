@@ -1,0 +1,52 @@
+﻿html, body, div button, canvas, h1, h2, h3, p{
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration:none;
+}
+ul {
+	list-style:none;
+}
+img{
+	border:none;
+}
+#tabs{
+      width:980px;
+      margin:50px;
+}
+#about {
+	font-size: 22px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#team {
+	font-size: 20px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+canvas{
+	float:left;
+	clear:both;
+}
+#tabs #tabs-1 .social-likes{
+	margin-left:10px;
+}
+#controls-list{
+	width:300px;
+	float:right;
+	display:inline;
+	background-color:#F8B74C;
+	border-radius:5px;
+	padding:5px;
+	border:5px dashed black;
+}
+#controls-list span {
+	color:red;
+	font-size:24px;
+}
+#tabs-1{
+	height:370px;
+	position:relative;
+}

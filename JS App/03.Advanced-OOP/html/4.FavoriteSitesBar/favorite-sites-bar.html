@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="description" content="JS App Lesson 3, Advanced OOP, Homework 3">
+	<meta name="keywords" content="lesson, exercise, javascript, favorite sidebar">
+	<meta name="author" content="crypted">
+	<meta charset="UTF-8">
+    <title>Favorite sites bar</title>
+	<link rel="stylesheet" type="text/css" href="../../css/fav-styles.css">
+    <script type="text/javascript" src="../../scripts/classical-extensions.js"></script>
+    <script type="text/javascript" src="../../scripts/favorite-sites-bar.js"></script>
+</head>
+<body>
+	<p>Advanced OOP: Homework Task 4:</p>
+	<p><a href="../../Homeworks.html">Main page</a></p>
+	<div id="task">
+		<span>Create a favorite sites bar</span>
+			<ul>
+				<li>The favorite sites bar should keep a set of urls and set of folders</li>
+				<li>Folders have a title and set of urls</li>
+				<li>Urls have a title and a url</li>
+				<li>The favorite sites bar should have a functionality to display urls and folders</li>
+				<li>If an url is clicked, it should be open in new tab in the browser</li>
+				<li>Use Classical OOP with Class.create()</li>
+			</ul>
+	<script>
+			var telerikAcademyForum = new URL("Forum Telerik Academy", "http://forums.academy.telerik.com/");
+            var youtube = new URL("YouTube", "http://www.youtube.com/");
+			var vbox = new URL("VBox", "http://vbox7.com/");
+            var musics = new Folder("Musics", [youtube, vbox]);
+            var telerikAcademy = new URL("Telerik Academy", "http://telerikacademy.com/");
+            var w3schools = new URL("w3schools", "http://www.w3schools.com/");
+			var lessons = new Folder("Lessons", [telerikAcademy, w3schools]);
+			var abv = new URL("Abv", "http://www.abv.bg/");
+            var gMail = new URL("GMail", "http://mail.google.com/");
+            var mails = new Folder("Mails", [gMail, abv]);
+            var inews = new URL("INews", "http://inews.bg/");
+            var actualno = new URL("Actualno", "http://www.actualno.com/");
+            var news = new Folder("News", [inews, actualno]);
+			
+            var favoriteSiteBar = new FavoriteSiteBar([telerikAcademyForum, telerikAcademy], [lessons, musics, mails, news]);
+            favoriteSiteBar.display();
+        </script>	
+</body>
+</html>

@@ -1,0 +1,36 @@
+html, body, p, h1, h2, h3, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #b5bbbf;	
+}
+
+h1 {
+	text-align: center;
+	color: #000;
+	margin: 10px;
+}
+
+button {
+	padding: 5px 5px;
+	border-radius: 5px;
+	margin: 10px;
+	background-color: #5d6569;
+}
+
+li#start {
+	background-color: #447799;
+}
+ul{
+	margin: 40px;
+}
+
+li.li-imp {
+	width: 200px;
+	height: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 5px;
+}

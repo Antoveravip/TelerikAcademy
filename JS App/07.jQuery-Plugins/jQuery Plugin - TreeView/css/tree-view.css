@@ -1,0 +1,52 @@
+html, body, p, h1, h2, h3, ul , ol{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #b5bbbf;	
+}
+h1, h2, h3, ol, ol li, ul {
+	margin-left: 20px;
+}
+a {
+	margin-left:-25px;
+	color: #fff;
+	font-family: Verdana, sans-serif;
+}
+.main-menu {
+	margin: 20px;
+	padding: 10px;
+	color: #fff;
+	width: 450px;
+    background: #6b6a6c;
+}
+.main-menu li {
+	padding-left: 25px;
+	list-style-type: none;
+	text-align: left;
+	font-family: Verdana, sans-serif;
+	font-style: italic;
+	font-size: 12px;
+	font-weight: normal;
+    line-height: 24px;
+}
+.main-menu li > ul {
+    display: none;
+}
+li > a {
+	background: url('../images/right-arrow.png') no-repeat;
+	padding-left: 25px;
+	padding-bottom: 5px;
+}
+.collapsed {
+	background: url('../images/down-arrow.png');
+}
+.expanded {
+	background: url('../images/up-arrow.png');
+}
+.collapsed, .expanded {
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	cursor: pointer;
+	background-position: left 5px;
+}

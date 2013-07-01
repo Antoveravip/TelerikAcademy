@@ -1,0 +1,36 @@
+﻿body {
+    background-color: #b5bbbf;
+}
+ 
+html, body, #map-canvas {
+    margin: 20px;
+    padding: 0;
+    height: 500px;
+    width: 1000px;
+}
+
+#map-canvas {
+    border:1px solid black;
+}
+ul {
+    position: absolute;
+    left: 1100px;
+    top: 150px;
+    list-style-type:none;
+}
+
+#prev {
+    position: absolute;
+    left: 1100px;
+    top: 100px;
+}
+
+#next {
+    position: absolute;
+    left: 1200px;
+    top: 100px;
+}
+
+.current {
+    color:red;
+}

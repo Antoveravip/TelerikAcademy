@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="description" content="JS App Lesson 3, Advanced OOP, Homework 3">
+	<meta name="keywords" content="lesson, exercise, javascript, image, slider">
+	<meta name="author" content="crypted">
+	<meta charset="UTF-8">
+    <title>Image Slider control using Prototypal OOP</title>
+	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <script type="text/javascript" src="../../scripts/prototype-extensions.js"></script>
+    <script type="text/javascript" src="../../scripts/image-slider.js"></script>
+</head>
+<body>
+	<p>Advanced OOP: Homework Task 3:</p>
+	<p><a href="../../Homeworks.html">Main page</a></p>
+	<div id="task">
+		<span>Implement a image slider control using Prototypal OOP</span>
+			<ul>
+				<li>The slider has a set of images and only one can be enlarged</li>
+				<li>Each image in the image slider has a title and two urls (thumbnail url and large image url)</li>
+				<li>When an image from the thumbnails is clicked</li>
+				<li>The slider must have buttons for prev/next image</li>
+			</ul>
+	</div>		
+    <div id="wrapper">
+        <div id="imageContainer"></div>
+        <div id="preview"></div>
+    </div>
+    <script>
+        var sliderControler = Controler.createSliderControler();
+        sliderControler.init("imageContainer", "preview");
+		
+		sliderControler.addImage("first", "../../images/slider_img_1.jpg", "../../images/slider_1.jpg");
+		sliderControler.addImage("image 2", "../../images/slider_img_2.jpg", "../../images/slider_2.jpg");
+		sliderControler.addImage("image 3", "../../images/slider_img_3.jpg", "../../images/slider_3.jpg");
+		sliderControler.addImage("image 4", "../../images/slider_img_4.jpg", "../../images/slider_4.jpg");
+		sliderControler.addImage("image 5", "../../images/slider_img_5.jpg", "../../images/slider_5.jpg");
+		sliderControler.addImage("image 6", "../../images/slider_img_6.jpg", "../../images/slider_6.jpg");
+		sliderControler.addImage("image 7", "../../images/slider_img_7.jpg", "../../images/slider_7.jpg");
+		sliderControler.addImage("image 8", "../../images/slider_img_8.jpg", "../../images/slider_8.jpg");
+		sliderControler.addImage("image 9", "../../images/slider_img_9.jpg", "../../images/slider_9.jpg");
+		sliderControler.addImage("image 10", "../../images/slider_img_10.jpg", "../../images/slider_10.jpg");
+		sliderControler.addImage("image 11", "../../images/slider_img_11.jpg", "../../images/slider_11.jpg");      
+ 
+        sliderControler.renderImages();
+    </script>
+</body>
+</html>

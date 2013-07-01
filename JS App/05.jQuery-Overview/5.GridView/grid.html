@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="description" content="JS App Lesson 5, jQuery Overview, Homework 5">
+	<meta name="keywords" content="lesson, exercise, jQuery, gridView control">
+	<meta name="author" content="crypted">
+	<meta charset="UTF-8">
+    <title>Implement a GridView control</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="scripts/jquery-2.0.2.min.js"></script>	
+</head>
+<body>
+	<h1>Task 5:Implement a GridView control</h1>
+ 	<p><a href="../Homeworks.html">Main page</a></p>
+    <div id="gridview-container"></div>
+	<script type="text/javascript" src="scripts/grid.js"></script>	
+	<script>
+		var movieCatalog = controls.GridView("#gridview-container");
+			movieCatalog.addHeader("Movie Type", "Country", "Year", "Quantity");
+			movieCatalog.addRow("Action", "USA", "2012", 3);
+			movieCatalog.addRow("Comedy", "France", "2008", 2);
+			var specialMovie = movieCatalog.addRow("Special", "Many", "2011", 2);
+
+			var special = specialMovie.NestedGridView();
+			special.addHeader("Type", "Country", "Year");
+			special.addRow("Orgy", "Germany", "2000");
+			special.addRow("Milf", "USA", "2013");
+
+			movieCatalog.addRow("Family", "Italy", "2010", 3);
+			var cartoonsMovie = movieCatalog.addRow("Cartoons", "Many", "2011", 5);
+
+			var cartoons = cartoonsMovie.NestedGridView();
+			cartoons.addHeader("Movie", "Studion", "Age");
+			cartoons.addRow("Lion King", "Disney", "3 - 103");
+			cartoons.addRow("Cingarela", "Disney", "2 - 11");
+			cartoons.addRow("Masha and Medved", "Unknown", "1 - 101");
+			
+			movieCatalog.addRow("Drama", "France", "2006", 2);
+			
+			movieCatalog.render();
+    </script>
+</body>
+</html>

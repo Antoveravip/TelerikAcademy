@@ -1,0 +1,71 @@
+html, body, p, h1, h2, h3, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #b5bbbf;	
+}
+
+#slide p {
+	padding: 10px;
+	text-align: justify;
+}
+
+#jQslider button, #slides {
+	float: left;
+}
+#btn-next, #btn-prev {
+	background: none;
+	border: 0;
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 46px;
+	margin-top: 160px;
+	cursor: pointer;
+}
+#btn-next {
+	background: url('../images/btn-next.png');
+}
+#btn-prev {
+	background: url('../images/btn-prev.png');
+}
+#jQslider {
+	zoom: 1;
+	width: 778px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#jQslider:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#slides {
+	width: 640px;
+	height: 360px;
+	overflow: auto;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: 10px 0;
+	background: #5d6569;
+	box-shadow: 20px 20px 30px #888;	
+}
+
+.post {
+	background: #000;
+	color: #FFF;
+}
+
+.post h1 {
+	color: #000;
+}
+
+.post a {
+	color: #b5bbbf;
+	text-decoration: none;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="description" content="JS App Lesson 7, jQuery Plugins, Homework 1">
+	<meta name="keywords" content="lesson, exercise, jQuery, Tree View, plugin ">
+	<meta name="author" content="crypted">
+	<meta charset="UTF-8">
+    <title>Create a TreeView jQuery Plugin</title>
+	<link rel="stylesheet" type="text/css" href="css/tree-view.css">
+	<script type="text/javascript" src="scripts/jquery-2.0.2.min.js"></script>	
+</head>
+<body>
+	<h3>jQuery Plugins: Homework Tasks:</h3>
+	<ol>
+		<li>Create a TreeView jQuery Plugin
+			<ul>
+				<li>Initially only the top items must be visible</li>				
+				<li>On item click
+					<ul>
+						<li>If its children are hidden (collapsed), they must be made visible (expanded)</li>
+						<li>If its children are visible (expanded), they must be made hidden (collapsed)</li>
+					</ul>
+				</li>
+				<li>Research about events</li>
+			</ul>
+		</li>
+	</ol>
+	<h3>Implementation of TreeView Plugin</h3>
+	<section>
+		<ul class="main-menu">
+			<li>Main item
+				<ul>
+					<li><a href="#">Submain item</a></li>
+					<li><a href="#">Submain item</a></li>
+					<li><a href="#">Submain item</a></li>
+				</ul>
+			</li>
+			<li>Main item
+				<ul>
+					<li><a href="#">Submain item</a></li>
+					<li>Submain item
+						<ul>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+						</ul>
+					</li>
+					<li>Submain item
+						<ul>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+						</ul>
+					</li>
+					<li>Submain item
+						<ul>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Main item
+				<ul>
+					<li><a href="#">Submain item</a></li>
+					<li>Submain item
+						<ul>
+							<li><a href="#">Sub item</a></li>
+							<li>Sub item
+								<ul>
+									<li><a href="#">Fourth level menu item</a></li>
+									<li><a href="#">Fourth level menu item</a></li>
+									<li><a href="#">Fourth level menu item</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Submain item
+						<ul>
+							<li><a href="#">Sub item</a></li>
+							<li>Sub item
+								<ul>
+									<li><a href="#">Fourth level menu item</a></li>
+									<li><a href="#">Fourth level menu item</a></li>
+									<li><a href="#">Fourth level menu item</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Main item
+				<ul>
+					<li><a href="#">Submain item</a></li>
+					<li>Submain item
+						<ul>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+						</ul>
+					</li>
+					<li>Submain item
+						<ul>
+							<li><a href="#">Sub item</a></li>
+							<li>Sub item
+								<ul>
+									<li><a href="#">Fourth level menu item</a></li>
+									<li>Fourth level menu item
+										<ul>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+										</ul>
+									</li>
+									<li>Fourth level menu item
+										<ul>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Sub item
+								<ul>
+									<li><a href="#">Fourth level menu item</a></li>
+									<li>Fourth level menu item
+										<ul>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+										</ul>
+									</li>
+									<li>Fourth level menu item
+										<ul>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+											<li><a href="#">Fifth level menu item</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<script type="text/javascript" src="scripts/tree-view.js"></script>	
+	<script type="text/javascript">
+       $(document).ready(function() {
+            $('.main-menu').expandable();
+      });
+	</script>
+</body>
+</html>
