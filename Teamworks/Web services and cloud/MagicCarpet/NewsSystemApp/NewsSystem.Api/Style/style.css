@@ -1,0 +1,192 @@
+﻿html, body, header, div, h1, h2, h3, form, label, input, button, textarea, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    zoom: 1;
+}
+
+    .clear:after {
+        clear: both;
+        display: block;
+        height: 0;
+        content: "";
+    }
+
+html {
+    background-color: #eee;
+}
+
+#wrapper {
+    width: 950px;
+    margin: 20px auto;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+}
+
+    #wrapper input[type="text"],
+    #wrapper input[type="password"],
+    #wrapper input[type="email"] {
+        width: 146px;
+        padding: 2px 4px;
+        border: 1px solid #999;
+        border-radius: 5px;
+    }
+
+.btn {
+    padding: 5px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #ddd;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+header {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+h1 {
+    text-align: center;
+}
+
+#login-reg {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
+#login-reg p {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#login-popup {
+    position: absolute;
+    right: 0;
+    width: 252px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    background-color: #fbfbfb;
+    line-height: 27px;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+}
+
+#login-popup label {
+    display: inline-block;
+    width: 70px;
+}
+
+#login-button.open-popup-btn {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #fbfbfb;
+}
+
+#content-main {
+    float: left;
+    width: 675px;
+    padding: 15px;
+    border-right: 1px solid #aaa;
+}
+
+#register-form {
+    text-align: center;
+}
+
+#register-form form {
+    display: inline-block;
+    line-height: 27px;
+}
+
+#register-form label {
+    display: inline-block;
+    width: 115px;
+    text-align: right;
+}
+
+#new-article-form form * {
+    margin: 2px 0;
+    vertical-align: top;
+}
+
+#new-article-form label {
+    display: inline-block;
+    width: 55px;
+    text-align: right;
+}
+
+#new-article-form input {
+    width: 606px !important;
+}
+
+#new-article-form textarea {
+    width: 606px;
+    height: 400px;
+    padding: 2px 4px;
+    resize: none;
+}
+
+#new-article-form #submit-article {
+    display: block;
+    margin: 10px auto;
+}
+
+#sidebar {
+    float: left;
+    margin-left: -1px;
+    padding: 15px;
+    border-left: 1px solid #aaa;
+}
+
+ul#recent-news-list {
+    margin-left: 35px;
+    list-style-image: url('../Images/news.png');
+}
+ul#recent-news-list li .article-title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+h3.article-title {
+    font-size: 35px;
+}
+
+ul#recent-news-list li:first-letter,
+#comments li:first-letter,
+h3.article-title:first-letter {
+    font-size: 210%;
+}
+ul#recent-news-list li {
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+#comments li {
+    margin-left: 50px;
+    list-style-image: url('../Images/answer.png');
+}
+#comments li li {
+    margin-left: 30px;
+    list-style-image: url('../Images/answer2.png');
+}
+#comments li li li {
+    margin-left: 30px;
+    list-style-image: url('../Images/answer.png');
+}
+#comments li li li li {
+    margin-left: 30px;
+    list-style-image: url('../Images/answer2.png');
+}

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple snake game" />
+	<meta name="author" content="Team Pear" />
+	<meta name="generator" content="Social Likes: http://sapegin.github.com/social-likes/">
+    <title>Snake game</title>
+	<link type="text/css" rel="stylesheet" href="css/main.css"  />
+	<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/social-likes.css">
+</head>
+<body>
+   <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">GAME</a></li>
+        <li><a href="#tabs-2">AboutUS</a></li>
+        <li><a href="#tabs-3">High-scores</a></li>
+      </ul>
+      <div id="tabs-1">
+         <canvas width="600" height="350"></canvas>
+          <div id = "controls-list">
+            <p>Press <span>Enter</span> for start game</p>
+            <p>Press <span>R</span> for restart game</p>
+            <p>Use <span>Space</span> for speed up</p>
+            <p>Control the snake with <span>W,A,S,D</span> or arrows</p>
+        </div>
+		<ul class="social-likes" data-title="I just play Snake Game!">
+			<li class="facebook" title="Share link on Facebook">Facebook</li>
+			<li class="twitter" title="Share link on Twitter">Twitter</li>
+			<li class="plusone" title="Share link on Google+">Google+</li>
+		</ul>
+      </div>
+      <div id="tabs-2">
+        <p id="about">About us:</p>
+		<P id="team">Team "Pear"</p>
+		<p>Alexandar Trifonov</p>
+        <p>Evgeni Kostadinov </p>
+        <p>Vasil Gudzhev </p>
+		<p>Veselin Genadiev</p>
+		<p>Petar Ivanov</p>
+      </div>
+      <div id="tabs-3">
+        <p>High-scores</p>
+        <div id="rank-list"></div>
+      </div>
+    </div>        
+  <script src="scripts/jquery-ui/js/jquery-1.9.1.js"></script>
+  <script src="scripts/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/social-likes.min.js"></script>
+</body>
+</html>
